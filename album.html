@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Romantic Photo Album</title>
+    <link rel="stylesheet" href="album.css">
+</head>
+<body>
+    <div class="album-container">
+        <h1 class="album-title">My fav person</h1>
+        <p class="album-description">The most beautiful woman in the world.</p>
+        
+        <div class="album-content">
+            <div class="photo-item">
+                <img src="img.jpg" alt="Omayma 1" class="photo">
+                <div class="caption">My</div>
+            </div>
+            <div class="photo-item">
+                <img src="img1.jpg" alt="Omayma 2" class="photo">
+                <div class="caption">most</div>
+            </div>
+            <div class="photo-item">
+                <img src="img2.jpg" alt="Omayma 3" class="photo">
+                <div class="caption">beautiful</div>
+            </div>
+            <div class="photo-item">
+                <img src="img3.jpg" alt="Omayma 4" class="photo">
+                <div class="caption">woman</div>
+            </div>
+            <div class="photo-item">
+                <img src="img4.jpg" alt="Omayma 5" class="photo">
+                <div class="caption">in the</div>
+            </div>
+            <div class="photo-item">
+                <img src="img5.jpg" alt="Omayma 6" class="photo">
+                <div class="caption">the world</div>
+            </div>
+        </div>
+
+        <div class="album-footer">
+            <button id="nextPage" class="next-page-btn">Next Page</button>
+            <button id="playMusic" class="play-music-btn">Play Music</button>
+        </div>
+
+        <audio id="audio" src="nopartyanthem.mp3" preload="auto"></audio>
+    </div>
+
+    <script src="album.js"></script>
+</body>
+</html>

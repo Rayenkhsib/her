@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Georgia', serif;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.start-button {
+    background: linear-gradient(to right, #ff758c, #ff7eb3);
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 0 15px #ff7eb3, 0 0 30px #ff758c;
+    animation: glow 2s ease-in-out infinite alternate;
+    z-index: 1;
+}
+
+.start-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #ff9ebf, 0 0 40px #ff6a91;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 15px #ff7eb3, 0 0 30px #ff758c;
+    }
+    100% {
+        box-shadow: 0 0 25px #ff9ebf, 0 0 40px #ff6a91;
+    }
+}
+
+/* Position "Next" button in the top-left corner */
+.buttons-container {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000; /* Makes sure the button appears on top of other content */
+}
+
+.cta-button {
+    background-color: #ff6f61;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ff3b2e;
+}

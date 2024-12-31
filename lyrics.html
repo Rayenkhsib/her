@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romantic Video Background</title>
+    <link rel="stylesheet" href="lyrics.css">
+</head>
+<body>
+    <div class="video-container">
+        <video id="backgroundVideo" class="background-video" controls>
+            <source src="song.mp4" type="video/mp4">
+        </video>
+        <div class="overlay">
+            <button id="startButton" class="start-button">Start</button>
+        </div>
+    </div>
+
+    <!-- "Next" button to teleport to another page -->
+    <div class="buttons-container">
+        <button class="cta-button" id="nextButton" onclick="window.location.href='album.html'">Next</button> <!-- Replace with your target URL -->
+    </div>
+
+    <script src="lyrics.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
